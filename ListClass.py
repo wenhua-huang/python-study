@@ -1,3 +1,4 @@
+import operator
 def reverseWords(input):
     inputWords = input.split(" ")
     # 翻转字符串
@@ -10,6 +11,44 @@ def reverseWords(input):
     inputWords = inputWords[-1::-1]
     output = ' '.join(inputWords)
     return output
+
+
+def testDel():
+    list = ['Google', 'Runoob', 1997, 2000]
+
+    print("原始列表 : ", list)
+    del list[2]
+    print("删除第三个元素 : ", list)
+
+
+def testAppend():
+    squares = [1, 4, 9, 16, 25]
+    squares += [36, 49, 64, 81, 100]
+    print(squares)
+
+
+def testNest():
+    a = ['a', 'b', 'c']
+    n = [1, 2, 3]
+    x = [a, n]
+    print(x)
+
+
+def testEq():
+    a = [1, 2]
+    b = [2, 3]
+    c = [2, 3]
+    print("operator.eq(a,b): ", operator.eq(a, b))
+    print("operator.eq(c,b): ", operator.eq(c, b))
+
+"""
+推倒式
+"""
+def testCD():
+    vec = [2, 4, 6]
+    var = [3 * x for x in vec]
+    print(var)
+
 
 if __name__ == '__main__':
     list = ['abcd', 786, 2.23, 'runoob', 70.2]
@@ -36,4 +75,14 @@ if __name__ == '__main__':
     intput = 'I like runoob'
     rw = reverseWords(intput)
     print(rw)
+    print('----------del--------------------------')
+    testDel()
+    print('--------------apend-------------')
+    testAppend()
+    print('-------------nest------------')
+    testNest()
+    print('------------eq--------')
+    testEq()
+    print("----------推倒式------")
+    testCD()
 

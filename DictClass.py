@@ -9,4 +9,5 @@ print (tinydict)          # {'name': 'runoob', 'code': 1, 'site': 'www.runoob.co
 print (tinydict.keys())   # dict_keys(['name', 'code', 'site'])
 print (tinydict.values()) # dict_values(['runoob', 1, 'www.runoob.com'])
  # a  = dict([('Runoob', 1), ('Google', 2), ('Taobao', 3)])
+#  字典里没有的键访问数据 会输出错误
 

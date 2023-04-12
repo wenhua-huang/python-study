@@ -1,3 +1,7 @@
+# global names
+moduleField = 1
+def moduleDef():
+    print("module name")
 class MyClass:
     i = 123
     def f(self):
@@ -110,3 +114,6 @@ if __name__ == '__main__':
     v1 = Vector(2, 10)
     v2 = Vector(5, -2)
     print(v1 + v2)
+    # built-in names
+    print(abs(-1))
+    raise Exception("我错了")
